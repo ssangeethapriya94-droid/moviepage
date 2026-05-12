@@ -1,0 +1,48 @@
+.body{
+    background-color: #6b7280;
+    color: white;
+}
+
+
+.sidebar {
+  width: 100px;
+  background-color: hsl(0, 0%, 9%); 
+  height: 100vh;
+  position: fixed; 
+  left:0;
+  top: 0;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  padding-top: 10px;
+  border-right: 1px solid #e5e7eb;
+  z-index: 1000;
+}
+
+.logo {
+  color: #003087;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 100px;
+  border-radius: 100px;
+}
+
+.nav-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 35px; /* Icons naduvula gap */
+}
+
+.icon {
+  font-size: 24px;
+  color: #6b7280; /* Gray color icons */
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+/* Mouse veikkumbodhu blue color-ah maarum */
+.icon:hover, .icon.active {
+  color: #3b82f6;
+  transform: scale(1.1);
+  
+}

@@ -1,0 +1,6 @@
+.home-container {
+  /* Unga sidebar 90px width-na, 90px gap vidunga */
+  margin-left: 90px; 
+  background-color:lightslategray; /* OTT look-ku black background best */
+  min-height: 100vh;
+}

@@ -1,0 +1,96 @@
+.body{
+    background-color: darkslategray;
+}
+
+.hero-container {
+  width: 100%;
+  height: 70vh; /* Screen-oda 70% height */
+  position: relative;
+  overflow: hidden;
+  background-color: #000; /* Video load aagura varai black-ah irukkum */
+  background: linear-gradient(rgb(59, 59, 223));
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Video stretch aagaama irukka idhu mukkiyam */
+}
+
+/* Video mela oru chinna dark shade (Gradient) thariaya */
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 60px 40px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.hero-description {
+  font-size: 18px;
+  max-width: 500px;
+  color: #e5e7eb;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 15px;
+}
+
+.watch-btn {
+  display: flex;
+  align-items: center; /* Icon and Text-ah vertical-ah center pannum */
+  justify-content: center;
+  gap: 10px;           /* Icon-kkum Text-kkum naduvula irukkura gap */
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-icon {
+  font-size: 16px;    /* Icon size-ah mattum adjust panna */
+}
+
+.watch-btn:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  transform: scale(1.02); /* Chinna hover effect */
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
