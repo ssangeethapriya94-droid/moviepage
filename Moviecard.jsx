@@ -26,7 +26,7 @@ const Moviecard = () => {
       <div className="movie-grid">
         {movies.map((movie) => (
           <div key={movie.id} className="movie-card">
-            {/* 1. Image: src-la API 'key' name-ah correct-ah kudunga */}
+           
             <img 
               src={movie.poster} 
               alt={movie.title} 

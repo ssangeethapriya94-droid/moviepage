@@ -13,17 +13,15 @@
   /* Indha line dhaan 6 columns-ah pirikkum */
   grid-template-columns: repeat(6, 1fr); 
   
-  gap: 20px;          /* Cards-ku naduvula gap */
+  gap: 20px;        
   padding: 20px 0;    
-  width: 100%;        /* Screen full width edukkum */
+  width: 100%;        
   
-  /* PAZHAYA FLEX/SCROLL CODE-AH REMOVE PANIDUNGA */
-  /* overflow-x: auto;  <-- Idha remove pannunga */
-  /* display: flex;     <-- Idha remove pannunga */
+ 
 }
 
 .movie-card {
-  /* Width auto-va grid pathukkum, so neenga height mattum fix panna podhum */
+ 
   height: 300px; 
   border-radius: 10px;
   overflow: hidden;
@@ -31,16 +29,16 @@
   transition: transform 0.3s ease;
 }
 
-/* Response Design (Optional): Screen chinna aana automatic-ah columns koraiyum */
+
 @media (max-width: 1200px) {
   .movie-grid {
-    grid-template-columns: repeat(4, 1fr); /* Tablet-la 4 cards */
+    grid-template-columns: repeat(4, 1fr); 
   }
 }
 
 @media (max-width: 768px) {
   .movie-grid {
-    grid-template-columns: repeat(2, 1fr); /* Mobile-la 2 cards */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
